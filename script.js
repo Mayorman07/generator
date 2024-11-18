@@ -4,7 +4,7 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gotti");
 var button = document.querySelector(".manifest");
 
-function eminem(){
+function background(){
      body.style.background
   = "linear-gradient(to right,"+ color1.value + ","+ color2.value + ")";
   css.textContent = body.style.background + " ; "
@@ -22,7 +22,7 @@ return color;
 function setColor(){
 color1.value = randomColor();
 color2.value = randomColor();
-eminem();
+background();
 }
 
 button.addEventListener("click",setColor);
